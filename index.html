@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alphabet Learner App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <div id="toolbar">
+      <button class="color-btn" id="red" onclick="changeColor('red')"></button>
+      <button class="color-btn" id="green" onclick="changeColor('green')"></button>
+      <button class="color-btn" id="blue" onclick="changeColor('blue')"></button>
+      <button class="color-btn" id="black" onclick="changeColor('black')"></button>
+    </div>
+    <div id="letter-container">
+      <canvas id="drawingCanvas"></canvas>
+      <div id="letter"></div>
+    </div>
+    <div id="controls">
+      <button id="eraser" onclick="clearCanvas()">Eraser</button>
+      <button id="speaker">Speaker</button>
+      <button id="next" onclick="nextPage()">Next</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
